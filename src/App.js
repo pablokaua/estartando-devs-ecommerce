@@ -1,9 +1,10 @@
-import './App.css';
+import React from 'react';
 
+import StyledInput from './components/searchBar';
 function App() {
   return (
     <div>
-      oi
+      <StyledInput />
     </div>
   );
 }
