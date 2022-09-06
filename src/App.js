@@ -1,11 +1,14 @@
-import React from 'react';
 
-import StyledInput from './components/searchBar';
+import { GlobalStyle } from '../src/styles/global'
+import { BrowserRouter } from "react-router-dom";
+import { Routers } from "./routes";
+
 function App() {
   return (
-    <div>
-      <StyledInput />
-    </div>
+    <BrowserRouter>
+      <GlobalStyle/>
+      <Routers/>
+    </BrowserRouter>
   );
 }
 
