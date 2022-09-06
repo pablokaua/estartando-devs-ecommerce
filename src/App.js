@@ -1,10 +1,14 @@
-import './App.css';
+import { GlobalStyle } from '../src/styles/global'
+import { BrowserRouter } from "react-router-dom";
+import { Routers } from "./routes";
 
 function App() {
   return (
-    <div>
-      oi
-    </div>
+    <BrowserRouter>
+      <GlobalStyle/>
+      <Routers/>
+    </BrowserRouter>
+      
   );
 }
 
