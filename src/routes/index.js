@@ -4,7 +4,7 @@ import { Product } from "../pages/Product"
 export const Routers = () => {
     return (
         <Routes>
-            <Route path="/produtos:id" element={<Product/>}/>
+            <Route path="/produtos/:id" element={<Product/>}/>
         </Routes>
     )
 }
