@@ -1,11 +1,11 @@
 import { ProductTitleWrapper } from "./styles"
-import { FaArrowLeft } from 'react-icons/fa';
+import { ImArrowLeft2 } from "react-icons/im"
 
-export const ProductTitle = (props) => {
+export const ProductTitle = ({productName}) => {
     return (
     <ProductTitleWrapper>
-        <div><FaArrowLeft/></div>
-        <p>{props.productName}</p>
+        <div><ImArrowLeft2/></div>
+        <p>{productName}</p>
     </ProductTitleWrapper>
     )
 }

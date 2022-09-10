@@ -5,7 +5,8 @@ export const products = [
         price: 39.90,
         image: "https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png",
         sizes: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
-        colors: ['#AA94B5', '#000000', '#C2EEEB']
+        colors: ['#AA94B5', '#000000', '#C2EEEB'],
+        description: 'descrição do produto'
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export const products = [
         price: 39.90,
         image: "https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png",
         sizes: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
-        colors: ['#AA94B5', '#000000', '#C2EEEB']
+        colors: ['#AA94B5', '#000000', '#C2EEEB'],
+        description: 'descrição do produto'
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export const products = [
         price: 39.90,
         image: "https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png",
         sizes: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
-        colors: ['#AA94B5', '#000000', '#C2EEEB']
+        colors: ['#AA94B5', '#000000', '#C2EEEB'],
+        description: 'descrição do produto'
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ export const products = [
         price: 39.90,
         image: "https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png",
         sizes: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
-        colors: ['#AA94B5', '#000000', '#C2EEEB']
+        colors: ['#AA94B5', '#000000', '#C2EEEB'],
+        description: 'descrição do produto'
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ export const products = [
         price: 39.90,
         image: "https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png",
         sizes: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
-        colors: ['#AA94B5', '#000000', '#C2EEEB']
+        colors: ['#AA94B5', '#000000', '#C2EEEB'],
+        description: 'descrição do produto'
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ export const products = [
         price: 39.90,
         image: "https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png",
         sizes: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
-        colors: ['#AA94B5', '#000000', '#C2EEEB']
+        colors: ['#AA94B5', '#000000', '#C2EEEB'],
+        description: 'descrição do produto'
     },
     {
         id: 7,
@@ -53,6 +59,7 @@ export const products = [
         price: 39.90,
         image: "https://www.pngkey.com/png/detail/14-148130_minion-imagenes-de-100x100-pixeles.png",
         sizes: ['PP', 'P', 'M', 'G', 'GG', 'XG'],
-        colors: ['#AA94B5', '#000000', '#C2EEEB']
+        colors: ['#AA94B5', '#000000', '#C2EEEB'],
+        description: 'descrição do produto'
     }
 ]
