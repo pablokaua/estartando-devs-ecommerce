@@ -7,5 +7,14 @@ export const worker = setupWorker(
             ctx.status(200),
             ctx.json([...products])
         )
+    }),
+
+    rest.get('/produtos/:id', (req, res, ctx) => {
+        const id = req.params.id;
+
+        return res(
+            ctx.status(200),
+            ctx.json({...products[id]})
+        )
     })
 )

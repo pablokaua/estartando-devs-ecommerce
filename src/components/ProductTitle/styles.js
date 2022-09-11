@@ -8,6 +8,10 @@ export const ProductTitleWrapper = styled.div`
     font-weight: 600;
     padding: 16px 24px;
 
+    & a {
+        color: inherit;
+    }
+
     & > p {
         margin: 0 auto;
     }

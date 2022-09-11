@@ -9,6 +9,10 @@ export const HeaderWrapper = styled.header`
     padding: 26px 17px;
     background-color: #232323;
 
+    &  a  {
+        color: inherit;
+    }
+
     & > div {
         display: flex;
         align-items: center;

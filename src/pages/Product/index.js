@@ -2,25 +2,22 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { ProductDetails } from "../../components/ProductDetails"
 import { ProductTitle } from "../../components/ProductTitle"
-import { getProducts } from "../../services/productService"
+import { getProduct } from "../../services/productService"
 import { ProductWrapper } from "./styles"
 import { Header } from "../../components/Header"
 
 
 export const Product = () => {
     const { id } = useParams();
-    const [products, setProducts] = useState({});
+    const [product, setProduct] = useState({});
     
     useEffect(() => {
-        const productsPromise = getProducts();
+        const productPromise = getProduct(id);
         
-        console.log(productsPromise)
-        productsPromise
-        .then(result => setProducts(result.data))
+        productPromise
+        .then(result => setProduct(result.data))
         .catch(error => console.error(error))
     }, [id])
-
-    const product = products[id]
        
 
     return (
