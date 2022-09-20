@@ -14,7 +14,7 @@ export const worker = setupWorker(
 
         return res(
             ctx.status(200),
-            ctx.json({...products[id]})
+            ctx.json({...products[1][id]})
         )
     })
 )
