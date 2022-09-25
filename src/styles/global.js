@@ -12,4 +12,8 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
     min-height: 100vh;
   }
+
+  a {
+    text-decoration: none;
+  }
 ` 

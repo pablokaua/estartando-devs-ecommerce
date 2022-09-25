@@ -25,12 +25,7 @@ export const Product = () => {
             <Header />
             <ProductTitle productName={product?.name}/>
             <img src={product?.images?.[1]} alt={product?.name} />
-            <ProductDetails 
-            productName={product?.name}
-            productPrice={product?.price}
-            productSizes={product?.sizes}
-            productColors={product?.colors}
-            productDescription={product?.description}/>
+            <ProductDetails product={product}/>
         </ProductWrapper>
     )
 }

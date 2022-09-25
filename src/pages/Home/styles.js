@@ -14,6 +14,10 @@ export const CategoriesWrapper = styled.div`
     width: 100%;
     margin: 0px auto 24px;
 
+    & > a {
+        width: 100%;
+    }
+
     & > h2 {
         margin: 24px 0;
         font-size: 16px;

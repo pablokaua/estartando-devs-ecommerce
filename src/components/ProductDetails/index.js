@@ -1,24 +1,24 @@
 import { Button } from "../Button"
 import { AddBagWrapper, Color, ColorsProduct, DetailsWrapper, InfoWrapper, ProductDescription, SizeOption, SizeWrapper } from "./styles"
 
-export const ProductDetails = ({productName, productPrice, productColors, productSizes, productDescription }) => {
+export const ProductDetails = ({ product }) => {
     return (
         <DetailsWrapper>
             <ColorsProduct>
-                {productColors?.map(color => (
+                {product?.colors?.map(color => (
                     <Color key={color} bgColor={color}/>
                 ))}
             </ColorsProduct>
             
             <InfoWrapper>
-                <p>{productName}</p>
-                <span>R${productPrice}</span>
+                <p>{product?.name}</p>
+                <span>R${product?.price}</span>
             </InfoWrapper>
 
             <SizeWrapper>
                 <p>Escolha seu tamanho</p>
                 <SizeOption>
-                {productSizes?.map(size => (
+                {product?.sizes?.map(size => (
                     <div key={size}>{size}</div>
                 ))}
                 </SizeOption>
@@ -29,7 +29,7 @@ export const ProductDetails = ({productName, productPrice, productColors, produc
             </AddBagWrapper>
 
             <ProductDescription>
-                {productDescription}
+                {product?.description}
             </ProductDescription>
         </DetailsWrapper>
     )

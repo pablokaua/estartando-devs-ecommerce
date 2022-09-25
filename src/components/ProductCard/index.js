@@ -1,17 +1,17 @@
 import { ImageCardWrapper, ProductCardDetails, ProductCardName, ProductCardWrapper } from "./styles"
 import { BsPlusLg } from 'react-icons/bs'
 
-export const ProductCard = ({image, name, price}) => {
+export const ProductCard = ({product}) => {
     return (
         <ProductCardWrapper>
             <ImageCardWrapper>
-                <img src={image} alt={name} />
+                <img src={product?.images[0]} alt={product?.name} />
             </ImageCardWrapper>
 
-            <ProductCardName><p>{name}</p></ProductCardName>
+            <ProductCardName><p>{product?.name}</p></ProductCardName>
             
             <ProductCardDetails>
-                <span>R${price}</span>
+                <span>R${product?.price}</span>
                 <button><BsPlusLg/></button>
             </ProductCardDetails>
 
