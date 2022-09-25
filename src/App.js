@@ -1,17 +1,16 @@
-
 import { GlobalStyle } from '../src/styles/global'
 import { BrowserRouter } from "react-router-dom";
 import { Routers } from "./routes";
-import { ProductContextProvider } from './contexts/ProductContext';
+import { MenuContextProvider } from './contexts/MenuContext';
 
 function App() {
   return (
-    <ProductContextProvider>
+    <MenuContextProvider>
       <BrowserRouter>
         <GlobalStyle/>
         <Routers/>
       </BrowserRouter>
-    </ProductContextProvider>
+    </MenuContextProvider>
   );
 }
 

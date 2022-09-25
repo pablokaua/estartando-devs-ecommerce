@@ -1,15 +1,17 @@
 import { MenuLink, MenuWrapper } from "./styles"
 import { IoIosArrowDown } from 'react-icons/io'
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { Link } from "react-router-dom";
+import { MenuContext } from "../../contexts/MenuContext";
 
-export const Menu = ({isVisible, setIsVisible}) => {
+export const Menu = () => {
     const [categoriesIsVisible, setCategoriesIsVisible] = useState(false);
+    const { menuIsVisible, toggleVisible } = useContext(MenuContext);
 
     return (
-        <MenuWrapper isVisible={isVisible}>
+        <MenuWrapper isVisible={menuIsVisible}>
             <nav>
-                <MenuLink><div onClick={() => setIsVisible(!isVisible)}>inicio</div></MenuLink>
+                <MenuLink><div onClick={toggleVisible}>inicio</div></MenuLink>
                 <MenuLink categoriesIsVisible={categoriesIsVisible}>
                     <div onClick={() => setCategoriesIsVisible(!categoriesIsVisible)}>
                         <p>categorias</p>
