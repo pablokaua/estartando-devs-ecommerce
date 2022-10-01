@@ -2,7 +2,7 @@ import { ProductTitleWrapper } from "./styles"
 import { ImArrowLeft2 } from "react-icons/im"
 import { Link } from "react-router-dom"
 
-export const ProductTitle = ({productName}) => {
+export const ProductTitle = ({children}) => {
     return (
     <ProductTitleWrapper>
         <div>
@@ -10,7 +10,7 @@ export const ProductTitle = ({productName}) => {
                 <ImArrowLeft2/>
             </Link>
         </div>
-        <p>{productName}</p>
+        <p>{children}</p>
     </ProductTitleWrapper>
     )
 }

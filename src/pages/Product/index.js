@@ -23,7 +23,7 @@ export const Product = () => {
     return (
         <ProductWrapper>
             <Header />
-            <ProductTitle productName={product?.name}/>
+            <ProductTitle><p>{product?.name}</p></ProductTitle>
             <img src={product?.images?.[1]} alt={product?.name} />
             <ProductDetails product={product}/>
         </ProductWrapper>

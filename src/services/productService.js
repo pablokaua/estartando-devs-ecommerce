@@ -7,3 +7,7 @@ export const getProducts = () => {
 export const getProduct = (id) => {
     return productApi.get(`/${id}`);
 }
+
+export const getCategories = (category) => {
+    return productApi.get(`/categorias/${category}`)
+}
