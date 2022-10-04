@@ -1,8 +1,7 @@
 import React from 'react';
-import { AddressForm } from './styles';
+import { FormInput } from './styles';
 
-const StyledInput = field => {
-  return <AddressForm type="text" placeholder={field} />;
+export const AddressForm = props => {
+  console.log(props.placeholder);
+  return <FormInput type="text" placeholder={props.placeholder} />;
 };
-
-export default StyledInput;

@@ -14,4 +14,4 @@ export const FormInput = styled.input`
   -webkit-appearance: none;
 `;
 
-export const AddressForm = styled.form``;
+export const Form = styled.form``;
