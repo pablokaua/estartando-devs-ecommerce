@@ -14,5 +14,9 @@ export const ProductTitleWrapper = styled.div`
 
     & > p {
         margin: 0 auto;
+
+        & > span {
+            text-transform: capitalize;
+        }
     }
 `
