@@ -8,7 +8,6 @@ import { Header } from '../../components/Header';
 import React from 'react';
 
 export const Product = () => {
-<<<<<<< HEAD
   const { id } = useParams();
   const [product, setProduct] = useState({});
 
@@ -23,32 +22,11 @@ export const Product = () => {
   return (
     <ProductWrapper>
       <Header />
-      <ProductTitle productName={product?.name} />
+      <ProductTitle>
+        <p>{product?.name}</p>
+      </ProductTitle>
       <img src={product?.images?.[1]} alt={product?.name} />
       <ProductDetails product={product} />
     </ProductWrapper>
   );
 };
-=======
-    const { id } = useParams();
-    const [product, setProduct] = useState({});
-    
-    useEffect(() => {
-        const productPromise = getProduct(id);
-        
-        productPromise
-        .then(result => setProduct(result.data))
-        .catch(error => console.error(error))
-    }, [id])
-    
-    
-    return (
-        <ProductWrapper>
-            <Header />
-            <ProductTitle><p>{product?.name}</p></ProductTitle>
-            <img src={product?.images?.[1]} alt={product?.name} />
-            <ProductDetails product={product}/>
-        </ProductWrapper>
-    )
-}
->>>>>>> 87f8f15c51803ce5ca50ee42c8f8e1ed15a81412
