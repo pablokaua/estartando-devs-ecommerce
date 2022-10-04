@@ -3,7 +3,7 @@ import { Home } from '../pages/Home';
 import { Product } from '../pages/Product';
 import { ProductCategory } from '../pages/ProductCategory';
 import React from 'react';
-import { AddressForm } from '../components/AddressForm';
+import { UserInfo } from '../pages/UserInfo';
 
 export const Routers = () => {
   return (
@@ -11,7 +11,7 @@ export const Routers = () => {
       <Route path="/" element={<Home />} />
       <Route path="/produtos/:id" element={<Product />} />
       <Route path="/:path" element={<ProductCategory />} />
-      <Route path="/sacola" element={<AddressForm placeholder="Nome" />} />
+      <Route path="/sacola" element={<UserInfo />} />
     </Routes>
   );
 };
